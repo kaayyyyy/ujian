@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Histogram Warna</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h2>Histogram Warna per Channel</h2>
+    <h3>Red</h3>
+    <img src="{{ url_for('static', filename='images/' + hist_filenames['red']) }}" width="400"><br>
+
+    <h3>Green</h3>
+    <img src="{{ url_for('static', filename='images/' + hist_filenames['green']) }}" width="400"><br>
+
+    <h3>Blue</h3>
+    <img src="{{ url_for('static', filename='images/' + hist_filenames['blue']) }}" width="400"><br>
+
+    <br><a href="{{ url_for('edit_image', filename=filename) }}">Kembali ke Edit Gambar</a>
+
+</body>
+</html>

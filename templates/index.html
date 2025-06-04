@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aplikasi Manipulasi Citra</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h2>Upload Gambar</h2>
+    <form method="post" enctype="multipart/form-data" action="/upload">
+        <input type="file" name="file" required>
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
